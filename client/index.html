@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Jumpy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300&family=Raleway:ital,wght@0,400;1,200&display=swap');
+</style>
+<body>
+  <header>
+    <div>
+      <img class="img-logo-dnc" src="../img/dnc.svg" alt="DNC - Logo">
+    </div>
+  </header>
+  <main>
+    <div class="main-container">
+      <div class="img-jumpy-logo">
+        <img class="img-logo-jumpy" src="../img/jumpy.svg" alt="Jumpy - Logo">
+        <h2>Bem vindo ao Jumpy!</h2>
+      </div>
+      <form id="form">
+        <div>
+          <h1>Nome Completo:</h1>
+          <input oninput="nameValidate()" class="required" placeholder="Nome Completo" type="text">
+          <span class="span-required">*Campo obrigatorio*</span>
+        </div>
+        
+        <div>
+          <h1>Email:</h1>
+          <input oninput="emailValidate()" class="required" placeholder="Email@email.com" type="text" >
+          <span class="span-required">*Campo obrigatorio*</span>
+        </div>
+        
+        <div>
+          <h1>Telefone:</h1>
+          <input oninput=" telefoneValidate()" class="required" placeholder="(00) 00000-0000" type="text">
+          <span class="span-required">*Campo obrigatorio*</span>
+        </div>
+
+        <div>
+          <h1>CPF:</h1>
+          <input oninput="cpfValidate()" class="required" placeholder="000.000.000-00" type="number">
+          <span class="span-required">*Campo obrigatorio*</span>
+        </div>
+
+        <div>
+          <h1>Senha:</h1>
+          <input oninput="mainPasswordValidate()" class="required" placeholder="*******************" type="password">
+          <span class="span-required">*Campo obrigatorio*</span>
+        </div>
+
+        <div>
+          <button>Cadastrar</button>
+        </div>
+      </form>
+
+    </div>
+  </main>
+</body>
+<script src="script.js"></script>
+
+</html>
